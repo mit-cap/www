@@ -1,0 +1,17 @@
+AddHandler php5-script .php
+RewriteEngine on
+RewriteBase /cap/SynthesisExpeditionWiki
+RewriteRule ^$ index.php [QSA]
+
+SSLOptions +OptRenegotiate +StdEnvVars
+SSLVerifyClient require
+
+# restrict to a limited set of users for now
+SSLVerifyDepth 2
+SSLRequire %{SSL_CLIENT_S_DN_O} == "MIT Computer Science & Artificial Intelligence Laboratory" && %{SSL_CLIENT_S_DN_Email} in {"asolar@CSAIL.MIT.EDU", "jbeane@CSAIL.MIT.EDU"}
+
+
+<FilesMatch "[A-Z].*\.php">
+        Order deny,allow
+        Deny from all
+</FilesMatch>

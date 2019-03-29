@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META name="verify-v1" content="E7CAKdK/YXZzYIZ/7WWURP/gYAyHqrf6YOcW8U1AjaM=" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Jeeves - Applications</title>
+<meta name="Jean Yang is a graduate student at MIT CSAIL." content="" />
+<link href="default.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="wrapper">
+  <div id="header">
+  <table width=800>
+          <tr>
+            <td><h1>Jeeves: Programming with Delegation</h1></td>
+            <td><img src="images/robot-butler.jpg"></td>
+          </tr>
+        </table> 
+  </div>
+  <div id="menu">
+    <ul>
+      <li><a href="index.html" accesskey="1" title="">Home</a></li>
+      <li><a href="tutorial.html" accesskey="2" title="">Tutorial</a></li>
+      <li class="active"><a href="applications.html" accesskey="3" title="">Applications</a></li>
+      <li><a href="materials.html" accesskey="4" title="">Materials</a></li>
+      <li><a href="download.html" accesskey="5" title="">Download</a></li>
+      <li><a href="team.html" accesskey="6" title="">Team</a></li>
+    </ul>
+  </div>
+  <div id="content">
+      <h2>Applications</h2>
+      <h3>Security</h3>
+      <p>We have been looking at how to use Jeeves to automatically enforce privacy policies.  Read more <a href="info_flow.html" target="blank">here</a>.</p>
+
+      <h3>Data processing</h3>
+      <p>We have been using delegation
+      to specify policies for handling missing inputs.  We have
+      been looking at <i>imputation strategies</i> for
+      Census Data.
+      It takes just seconds for Jeeves interpreter to process almost 400,000 records from the US Census
+      Bureau's Current Population Survey based on documented imputation
+      strategies.</p>
+  </div>
+  <div id="footer">
+    <p>&copy; 2011 Jean Yang.</p>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META name="verify-v1" content="E7CAKdK/YXZzYIZ/7WWURP/gYAyHqrf6YOcW8U1AjaM=" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Jeeves - Download</title>
+<meta name="Jean Yang is a graduate student at MIT CSAIL." content="" />
+<link href="default.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="wrapper">
+  <div id="header">
+  <table width=800>
+          <tr>
+            <td><h1>Jeeves: Programming with Delegation</h1></td>
+            <td><img src="images/robot-butler.jpg"></td>
+          </tr>
+        </table> 
+  </div>
+  <div id="menu">
+    <ul>
+      <li><a href="index.html" accesskey="1" title="">Home</a></li>
+      <li><a href="tutorial.html" accesskey="2" title="">Tutorial</a></li>
+      <li><a href="applications.html" accesskey="3" title="">Applications</a></li>
+      <li><a href="materials.html" accesskey="4" title="">Materials</a></li>
+      <li class="active"><a href="download.html" accesskey="5" title="">Download</a></li>
+      <li><a href="team.html" accesskey="6" title="">Team</a></li>
+    </ul>
+  </div>
+  <div id="content">
+    <h2>Downloading and Running Jeeves</h2>
+
+    <p>Please contact Jean Yang (jeanyang [at] mit [dot] edu) if you are interested in trying out the Jeeves interpreter.</p>
+
+    <ul>
+      <li><a href="#compiling">Compiling the Jeeves Interpreter</a></li>
+      <li><a href="#interpreting">Running Jeeves Programs Using the
+        Interpreter</a></li>
+    </ul>
+
+    <h3>Compiling the Jeeves Interpreter</h3>
+    <a name="compiling"></a>
+
+      <h4>Software</h4>
+      <p>You will need the following to compile and run the Jeeves software.</p>
+      <ul>
+        <li>OCaml Version 3.11.0 or above.</li>
+        <li>GCC.  Any standard version should be fine.</li>
+        <li><a href="http://yices.csl.sri.com/download.shtml"
+          target="blank">The Yices SMT Solver</a>.  You will want to install a
+        dynamically linked version of version 1.0.28 for the Yices C API to work
+        properly.</li>
+      </ul>
+
+    <h4>Setting up for Compiling and Running</h4>
+    <p>To compile against the Yices C API, you will need to copy [yices]/include/yices_c.h and [yices]/include/yicesl_c.h to your /usr/local/include directory.  To be able to dynamically link against the Yices C API, you will need to copy [yices]/lib/libyices.a and [yices]/lib/libyices.so to /usr/local/lib.</p>
+
+    <h4>Compiling</h4>
+    <p>You will need to build twice, once in backend/BackendRep and once in the main directory.  You can type "make" to build each time.  You must build the backend first.</p>
+
+    <h3>Running Jeeves Programs Using the Interpreter</h3>
+    <a name="interpreting"></a>
+
+    <p>The basic way of running it is with:</p>
+
+<p><code>./jeeves -file [file name]</code></p>
+
+    <p>You may type <code>./jeeves --help</code> to see a listing of interpreter options.</p>
+  </div>
+  <div id="footer">
+    <p>&copy; 2011 Jean Yang.</p>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>MIT Computer-Aided Programming (CAP) Group</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-theme.min.css">
+  </head>
+  <body>
+    <div class='container'>
+      <div class='jumbotron'>
+        <h1>MIT Computer-Aided Programming (CAP) Group</h1>
+        <table style='display:none'>
+          <tr><td><img src="images/StudentKnights.png"></td></tr>
+          <tr align="center"><td><small>L-R: Rishabh Singh, Zhilei Xu, Prof. Armando Solar-Lezama, Kuat Yessenov, and Jean Yang.</small></td></tr>
+        </table>
+        <hr>
+        <h3>Research Agenda</h3>
+        <p>We aim to develop tools and techniques that exploit computing power to help programmers tackle programming problems.</p>
+      </div>
+
+      <h3>Members</h3>
+      <p><a href="http://people.csail.mit.edu/asolar/" target="blank">Professor Armando Solar-Lezama</a>, <i>Fearless Leader</i></p>
+      <h3>Postdocs</h3>
+      <ul>
+        <li><a href="http://people.csail.mit.edu/xkqiu/" target="blank">Xiaokang Qiu</a></li>
+      </ul>
+      <h3>Graduate Students</h3>
+      <ul>
+        <li><a href="http://people.csail.mit.edu/jeanyang/" target="blank">Jean Yang</a></li>
+        <li><a href="http://people.csail.mit.edu/rishabh/" target="blank">Rishabh Singh</a></li>
+        <li>Zhilei Xu</li>
+        <li><a href="http://people.csail.mit.edu/kuat/" target="blank">Kuat Yessenov</a></li>
+        <li><a href="http://people.csail.mit.edu/akcheung/" target="blank">Alvin Cheung</a></li>
+        <li><a href="http://rohitsingh.net/" target="blank">Rohit Singh</a></li>
+        <li>Yewen (Evan) Pu</li>
+        <li>Zenna Tavares</li>
+      </ul>
+    </div>
+  </body>
+</html>

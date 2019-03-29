@@ -1,0 +1,65 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META name="verify-v1" content="E7CAKdK/YXZzYIZ/7WWURP/gYAyHqrf6YOcW8U1AjaM=" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Jeeves - Home</title>
+<meta name="Jean Yang is a graduate student at MIT CSAIL." content="" />
+<link href="default.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="wrapper">
+  <div id="header">
+  <table width=800>
+          <tr>
+            <td><h1>Jeeves: Programming with Delegation</h1></td>
+            <td><img src="images/robot-butler.jpg"></td>
+          </tr>
+        </table> 
+  </div>
+  <div id="menu">
+    <ul>
+      <li class="active"><a href="index.html" accesskey="1" title="">Home</a></li>
+      <li><a href="tutorial.html" accesskey="2" title="">Tutorial</a></li>
+      <li><a href="applications.html" accesskey="3" title="">Applications</a></li>
+      <li><a href="materials.html" accesskey="4" title="">Materials</a></li>
+      <li><a href="download.html" accesskey="5" title="">Download</a></li>
+      <li><a href="team.html" accesskey="6" title="">Team</a></li>
+    </ul>
+  </div>
+  <div id="content">
+    <p>Our goal is to mitigate the difficulty of writing and reasoning about code for global concerns such as application privacy.  We want to allow the programmer to write high-level policies for global concerns that are automatically handled.</p>
+
+      <h3>Overview</h3>
+    <p>It is often difficult to implement global concerns that are intertwined with the core program. For instance, enforcing fine-grained privacy policies in social networks requires global reasoning about how seemingly
+    unrelated interactions in the core program can leak information.  We want to allow the programmer to reason about such concerns at a high level and automatically handles their enforcement.</p>
+
+    <h4>Programming model</h4>
+    <p><i>Programming with delegation</i> supports nondeterminism to unburden the programmer from having to specify certain behaviors but restricts the nondeterminism to allow for efficient execution.  We have developed the Jeeves programming language,
+    which extends an  ML-like functional language with support for nondeterministic <i>delegated expressions</i>.  Delegated expressions are evaluated according to the semantics of the program and programmer-specified constraints.  The nondeterminism is preserved until the programmer requests a concrete expression, at which point the runtime produces a value lazily in the dynamic context.</p>
+    
+    <p>The main differences between Jeeves and prior languages for programming with delegation are:
+    <ol>
+      <li>Nondeterministic values can interact with the entire program rather than to designated parts of the program.</li>
+      <li>Jeeves has a specialized policy language that allows constraints on nondeterministic values to refer to contexts in which the resulting value will be determinized.</li>
+    </ol></p>
+
+    <h4>Execution strategy</h4>
+    For the programs we target, having a restricted form of nondeterminism throughout the program can yield a more efficient execution strategy than having unbounded nondeterminism in restricted parts of the program.  We have been developing an efficient
+    interpreter implementation that executes symbolically while minimizing the
+    size of the symbolic state and constraint environment.
+    The interpreter performs eager simplifications to reduce the size of the
+    symbolic environment but resolves constraints lazily when the program requests a deterministic value.
+    This execution strategy takes advantage of the assumption that the program is mostly deterministic.</p>
+    
+    <h3>Project Status</h3>
+    <p>We have a semantics for the Jeeves language and a prototype interpreter written in OCaml, C++, and the Yices SMT solver.
+    We are currently interested in looking at how delegation is useful in different domains.</p>
+    </ul>
+    </p>
+  </div>
+  <div id="footer">
+    <p>&copy; 2011 Jean Yang.</p>
+  </div>
+</div>
+</body>
+</html>
