@@ -1,0 +1,100 @@
+body {
+    background-color: #eeeeee;
+    color: #3b3b3b;
+    font-family: Open Sans, sans-serif;
+    text-align: justify;
+}
+#nav_bar {
+    display: table;
+    background-color: #4b4b4b;
+    color: #eeeeee;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    text-align: center;
+}
+#nav_bar ul{
+    padding-left: 0px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+#nav_bar li{
+    display: inline;
+    list-style-type: none;
+    padding: 15px;
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 18pt;
+}
+#nav_bar a:link {
+    color: #eeeeee;
+    text-decoration: none;
+}
+#nav_bar a:visited {
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+div.anchor {
+    position: relative;
+    top: -50px;
+}
+
+div.photo_container {
+    display:inline-block;
+    width: 125px;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+}
+div.photo_row {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 0;
+}
+div.photo_section {
+    background-color: #d45100;
+    margin: 0 -20px;
+    padding: 20px 0;
+}
+div.mission {
+    font-size: 14pt;
+    text-align: center;
+    margin: 20px auto;
+    width: 700px;
+}
+div.content {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.logo {
+    text-align: right;
+}
+h1 {
+    color: #d45100;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 36pt;
+    font-weight: 300;
+    margin-top: 90px;
+}
+h2 {
+    color: #d45100;
+    text-align: center;
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 26pt;
+}
+a:link {
+    color: #3b3b3b;
+}
+a:visited {
+    color: #3b3b3b;
+}
+tt {
+	  font-family: monospace;
+}
