@@ -1,9 +1,9 @@
 # Updating the Website
 
 To push your changes to the live website, first set up a remote pointing to the server.
-```
-git remote add live /afs/csail.mit.edu/group/cap/www.git
-```
+ - With AFS: `git remote add live /afs/csail.mit.edu/group/cap/www.git`
+ - With ssh: `git remote add live ssh://USER@sketch2.csail.mit.edu:/afs/csail.mit.edu/group/cap/www.git`
+
 Then, push to the server. Only the master branch needs to be pushed.
 ```
 git push live +master:refs/heads/master
